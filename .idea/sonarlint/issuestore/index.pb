@@ -11,12 +11,6 @@ A
 src/util/theme.js,2\1\21be824e824d028dae234d7c13a5a9f5c00e55ad
 <
 src/index.js,f\9\f900edc44cb929c2267a16100a32851f6d5b477d
-c
-3src/components/algoriphms/hellman/hellman.styles.js,0\1\01618354ed2cc011aa62ea928a55c98421dd687b
-f
-6src/components/algoriphms/hellman/hellman.component.js,9\2\92ecdc6a85f77d7032cde0f1b7aedbb24ccf2da8
-f
-6src/components/algoriphms/hellman/hellman.algorithm.js,a\4\a4c2552fc4e5c891bfd9784b630f2d08bd593003
 K
 src/components/home/home.js,6\e\6e3c9ca8be0f03781bc4bbb4eab0a824d9968eef
 :
@@ -40,3 +34,9 @@ P
  src/components/navbar/NabarRx.js,2\1\21ec6227bcb5a19aeff7d895d48c7d410beddc6a
 L
 src/components/home/Home.css,7\c\7cfba00b10b1d6a591fdeae61b1d6ecca67c235f
+9
+	.eslintrc,4\b\4be5f5e3cea171c304090be92469b2f2cb51039a
+b
+2src/components/algoriphms/hellman/DiffiHellman.css,e\4\e4bc7405aa8348ac20f137df3d3a078652c78bee
+b
+2src/components/algoriphms/hellman/DiffieHellman.js,8\9\892ad1a11c8e3e222030649da7d3f43858de66c7

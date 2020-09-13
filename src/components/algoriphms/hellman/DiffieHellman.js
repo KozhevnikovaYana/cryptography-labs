@@ -19,9 +19,6 @@ export default class DiffieHellman extends React.Component {
         const { p, g } = this.state;
         this.runDiffHellman(p, g);
     };
-    handleChange = event => {
-        this.setState({ [event.target.name]: event.target.value });
-    };
 
     runDiffHellman = (p, g) => {
         const pNumber = parseInt(p);
@@ -41,7 +38,7 @@ export default class DiffieHellman extends React.Component {
 
     render() {
       return (
-      <div class="row center-block mt-5">
+      <div class="row mt-lg-5">
           <div class = "col-6 offset-3 shadow-lg p-3 2 bg-white rounded text-xs-center">
               <Form onSubmit={this.handleSubmit}>
                   <Form.Row>
