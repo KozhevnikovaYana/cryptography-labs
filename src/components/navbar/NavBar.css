@@ -1,0 +1,12 @@
+/* set the background color of the navbar */
+.navbar {
+    background-color: #990099;
+    color: white;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.NavLink {
+}
