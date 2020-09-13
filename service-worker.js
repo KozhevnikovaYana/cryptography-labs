@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cryptography-labs%20npm%20run%20deploy%20npm%20run%20deploy%20npm%20run%20deploy%20npm%20run%20deploy/precache-manifest.9871dc7b3449d15d5f089e988f297036.js"
+  "/cryptography-labs/precache-manifest.37c51592f1fd1b949e4ed5b0f5f9f5c8.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/cryptography-labs%20npm%20run%20deploy%20npm%20run%20deploy%20npm%20run%20deploy%20npm%20run%20deploy/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/cryptography-labs/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
