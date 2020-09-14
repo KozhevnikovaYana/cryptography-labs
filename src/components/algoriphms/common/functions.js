@@ -2,40 +2,40 @@ const bigInt = require('big-integer');
 
 /*An Diffie-Hellman algorithm
 * Can get (P and Q) OR size of them in number of digits*/
-export function diffiHellman(P, G){
-    let p = BigInt(P);
-   // let g = BigInt(G) % p;
-    let g = BigInt(G);
-    // first client
-    let Xa = (bigInt.randBetween((p/2n).toString(), (p-1n).toString()));
+export function diffiHellman(p, g){
+    // first
+    let Xa =  randomIntFromInterval((p/2), (p-1));
     let Ya = fastDegreeModule(g,Xa, p);
 
     // second
-    let Xb = (bigInt.randBetween((p/2n).toString(), (p-1n).toString()));
+    let Xb = randomIntFromInterval((p/2), (p-1));
     let Yb = fastDegreeModule(g,Xb, p);
 
     // Connection
     let Zab = fastDegreeModule(Yb,Xa, p);
     let Zba = fastDegreeModule(Ya,Xb, p);
 
-     console.table({ p, g, Xa, Ya, Xb, Yb, Zab, Zba})
+//     console.table({ p, g, Xa, Ya, Xb, Yb, Zab, Zba})
     return {p, g, Xa, Ya, Xb, Yb, Zab, Zba}
+}
+
+function randomIntFromInterval(min, max) { // min and max included
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 /*A - base, X - power, P - module
 * returns (A ** P) mod M for any numbers*/
-export function fastDegreeModule(A,X,P) {
-    let a = BigInt(A); let x = BigInt(X); let p = BigInt(P);
-    let result = 1n;
+export function fastDegreeModule(a,x,p) {
+    let result = 1;
     let arrayOfDegrees = countFactorOf2Degree(x).split(" ");
     let helpVar = (a * a) % p;
-    let helpDegree = 2n;
+    let helpDegree = 2;
     for (let i = arrayOfDegrees.length; i > 0; i--) {
 
         // Возведение в степень по модулю
         if (arrayOfDegrees[i - 1] !== "" && arrayOfDegrees[i - 1] !== '1' && arrayOfDegrees[i - 1] !== '0') {
             while (helpDegree.toString() !== arrayOfDegrees[i - 1]) {
                 helpVar = ((helpVar * helpVar)) % p;
-                helpDegree = helpDegree * 2n;
+                helpDegree = helpDegree * 2;
             }
             result = (result * helpVar) % p;
         } else {
@@ -55,16 +55,16 @@ const degreeModule = (a, p, m) => {
 * returns a string like "2 4 8" for 14 */
 function countFactorOf2Degree(num) {
     //if(num == 0) return "0";
-    let tmp = 1n;
-    if (num === 0n) {
+    let tmp = 1;
+    if (num === 0) {
         return 0n;
-    } else if (num === 1n) {
+    } else if (num === 1) {
         return "1";
     }
     while (tmp <= num) {
-        tmp *= 2n;
+        tmp *= 2;
     }
-    tmp /= 2n;
+    tmp /= 2;
     num = num - tmp;
     // console.log(tmp, num)
     return tmp.toString() + " " + countFactorOf2Degree(num);

@@ -38,8 +38,9 @@ export default class DiffieHellman extends React.Component {
 
     render() {
       return (
+
       <div class="row mt-lg-5">
-          <div class = "col-6 offset-3 shadow-lg p-3 2 bg-white rounded text-xs-center">
+          <div class = "col-6 offset-3 shadow-lg p-3 2 bg-white rounded text-xs-center" style={"margin-top: 60px"}>
               <Form onSubmit={this.handleSubmit}>
                   <Form.Row>
                       <Form.Group as={Col} md="6">
@@ -116,7 +117,7 @@ export default class DiffieHellman extends React.Component {
                           />
                       </Form.Group>
                   </Form.Row>
-                  <Button type="submit" className="align-content-center">Расчитать</Button>
+                  <Button type="submit" className="align-content-center" onSubmit={this.handleSubmit}>Расчитать</Button>
               </Form>
           </div>
       </div>
