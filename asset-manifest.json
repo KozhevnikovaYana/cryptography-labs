@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/cryptography-labs/static/css/main.21ee56ba.chunk.css",
-    "main.js": "/cryptography-labs/static/js/main.34e24082.chunk.js",
-    "main.js.map": "/cryptography-labs/static/js/main.34e24082.chunk.js.map",
+    "main.css": "/cryptography-labs/static/css/main.1ce3f0b2.chunk.css",
+    "main.js": "/cryptography-labs/static/js/main.79f07ac7.chunk.js",
+    "main.js.map": "/cryptography-labs/static/js/main.79f07ac7.chunk.js.map",
     "runtime-main.js": "/cryptography-labs/static/js/runtime-main.9a3bb5fd.js",
     "runtime-main.js.map": "/cryptography-labs/static/js/runtime-main.9a3bb5fd.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/cryptography-labs/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.9f08f196.chunk.js": "/cryptography-labs/static/js/2.9f08f196.chunk.js",
-    "static/js/2.9f08f196.chunk.js.map": "/cryptography-labs/static/js/2.9f08f196.chunk.js.map",
+    "static/js/2.fea99d46.chunk.js": "/cryptography-labs/static/js/2.fea99d46.chunk.js",
+    "static/js/2.fea99d46.chunk.js.map": "/cryptography-labs/static/js/2.fea99d46.chunk.js.map",
     "index.html": "/cryptography-labs/index.html",
-    "precache-manifest.fd677694ef12495ab42031cdcc4e4a1d.js": "/cryptography-labs/precache-manifest.fd677694ef12495ab42031cdcc4e4a1d.js",
+    "precache-manifest.499bc7ad710139f939c76803c1a22b03.js": "/cryptography-labs/precache-manifest.499bc7ad710139f939c76803c1a22b03.js",
     "service-worker.js": "/cryptography-labs/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/cryptography-labs/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.21ee56ba.chunk.css.map": "/cryptography-labs/static/css/main.21ee56ba.chunk.css.map",
-    "static/js/2.9f08f196.chunk.js.LICENSE.txt": "/cryptography-labs/static/js/2.9f08f196.chunk.js.LICENSE.txt"
+    "static/css/main.1ce3f0b2.chunk.css.map": "/cryptography-labs/static/css/main.1ce3f0b2.chunk.css.map",
+    "static/js/2.fea99d46.chunk.js.LICENSE.txt": "/cryptography-labs/static/js/2.fea99d46.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9a3bb5fd.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.9f08f196.chunk.js",
-    "static/css/main.21ee56ba.chunk.css",
-    "static/js/main.34e24082.chunk.js"
+    "static/js/2.fea99d46.chunk.js",
+    "static/css/main.1ce3f0b2.chunk.css",
+    "static/js/main.79f07ac7.chunk.js"
   ]
 }
