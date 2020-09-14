@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4eccc03c95805c121cbb4f908e70113a",
+    "revision": "15adde8211c39e8810dcd939da69678c",
     "url": "/cryptography-labs/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cryptography-labs/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "852a9b798883b3129caa",
+    "revision": "5b43af76ccfc7806a3e5",
     "url": "/cryptography-labs/static/css/main.21ee56ba.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cryptography-labs/static/js/2.22bc4d4d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "852a9b798883b3129caa",
-    "url": "/cryptography-labs/static/js/main.9fc1f4cd.chunk.js"
+    "revision": "5b43af76ccfc7806a3e5",
+    "url": "/cryptography-labs/static/js/main.3e5a70ae.chunk.js"
   },
   {
     "revision": "5ba6a05f0429f9f1a274",
