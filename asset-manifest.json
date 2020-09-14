@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cryptography-labs/static/css/main.1ce3f0b2.chunk.css",
-    "main.js": "/cryptography-labs/static/js/main.79f07ac7.chunk.js",
-    "main.js.map": "/cryptography-labs/static/js/main.79f07ac7.chunk.js.map",
+    "main.js": "/cryptography-labs/static/js/main.4f83b6d1.chunk.js",
+    "main.js.map": "/cryptography-labs/static/js/main.4f83b6d1.chunk.js.map",
     "runtime-main.js": "/cryptography-labs/static/js/runtime-main.9a3bb5fd.js",
     "runtime-main.js.map": "/cryptography-labs/static/js/runtime-main.9a3bb5fd.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/cryptography-labs/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.fea99d46.chunk.js": "/cryptography-labs/static/js/2.fea99d46.chunk.js",
     "static/js/2.fea99d46.chunk.js.map": "/cryptography-labs/static/js/2.fea99d46.chunk.js.map",
     "index.html": "/cryptography-labs/index.html",
-    "precache-manifest.499bc7ad710139f939c76803c1a22b03.js": "/cryptography-labs/precache-manifest.499bc7ad710139f939c76803c1a22b03.js",
+    "precache-manifest.36761c9d0e4dfc870975b4c430bd4814.js": "/cryptography-labs/precache-manifest.36761c9d0e4dfc870975b4c430bd4814.js",
     "service-worker.js": "/cryptography-labs/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/cryptography-labs/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.1ce3f0b2.chunk.css.map": "/cryptography-labs/static/css/main.1ce3f0b2.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.fea99d46.chunk.js",
     "static/css/main.1ce3f0b2.chunk.css",
-    "static/js/main.79f07ac7.chunk.js"
+    "static/js/main.4f83b6d1.chunk.js"
   ]
 }
