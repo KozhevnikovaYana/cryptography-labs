@@ -11,15 +11,18 @@ import Home from "./components/home/home";
 class App extends Component {
     render() {
         return (
-
-            <Router>
-                <NavBar />
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/diffiHellman" component={DiffieHellman} />
-                </Switch>
-                <Footer />
-            </Router>
+            <div class={"common"}>
+                <Router>
+                    <NavBar />
+                    <Switch>
+                        <div className={"algo mt-5"}>
+                            <Route exact path="/" component={Home} />
+                            <Route exact path="/diffiHellman" component={DiffieHellman} />
+                        </div>
+                    </Switch>
+                    <Footer />
+                </Router>
+            </div>
 
         );
     };

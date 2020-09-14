@@ -38,89 +38,84 @@ export default class DiffieHellman extends React.Component {
 
     render() {
       return (
+          <Form className={"col-6 pt-5 offset-3 shadow-lg p-3 2 bg-white rounded"} onSubmit={this.handleSubmit}>
+              <Form.Row>
+                  <Form.Group as={Col} md="6">
+                      <Form.Label class>P</Form.Label>
+                      <Form.Control
+                          required
+                          type="text"
+                          value={this.state.p}
+                          onChange={e => this.setState({p: e.target.value})}
+                      />
+                  </Form.Group>
+                  <Form.Group as={Col} md="6">
+                      <Form.Label>G</Form.Label>
+                      <Form.Control
+                          required
+                          type="text"
+                          value={this.state.g}
+                          onChange={e => this.setState({g: e.target.value})}
+                      />
+                  </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                  <Form.Group as={Col} md="6">
+                      <Form.Label>Xa</Form.Label>
+                      <Form.Control
+                          readOnly
+                          type="text"
+                          value={this.state.Xa}
+                      />
+                  </Form.Group>
+                  <Form.Group as={Col} md="6">
+                      <Form.Label>Ya</Form.Label>
+                      <Form.Control
+                          readOnly
+                          type="text"
+                          value={this.state.Ya}
+                      />
+                  </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                  <Form.Group as={Col} md="6">
+                      <Form.Label>Xb</Form.Label>
+                      <Form.Control
+                          readOnly
+                          type="text"
+                          value={this.state.Xb}
+                      />
+                  </Form.Group>
+                  <Form.Group as={Col} md="6">
+                      <Form.Label>Yb</Form.Label>
+                      <Form.Control
+                          readOnly
+                          type="text"
+                          value={this.state.Yb}
+                      />
+                  </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                  <Form.Group as={Col} md="6">
+                      <Form.Label>Zab</Form.Label>
+                      <Form.Control
+                          readOnly
+                          type="text"
+                          value={this.state.Zab}
+                      />
+                  </Form.Group>
+                  <Form.Group as={Col} md="6">
+                      <Form.Label>Zba</Form.Label>
+                      <Form.Control
+                          readOnly
+                          type="text"
+                          value={this.state.Zba}
 
-      <div class="row mt-lg-5">
-          <div class = "col-6 offset-3 shadow-lg p-3 2 bg-white rounded text-xs-center" style={"margin-top: 60px"}>
-              <Form onSubmit={this.handleSubmit}>
-                  <Form.Row>
-                      <Form.Group as={Col} md="6">
-                          <Form.Label class>P</Form.Label>
-                          <Form.Control
-                              required
-                              type="text"
-                              value={this.state.p}
-                              onChange={e => this.setState({p: e.target.value})}
-                          />
-                      </Form.Group>
-                      <Form.Group as={Col} md="6" >
-                          <Form.Label>G</Form.Label>
-                          <Form.Control
-                              required
-                              type="text"
-                              value={this.state.g}
-                              onChange={e => this.setState({g: e.target.value})}
-                          />
-                      </Form.Group>
-                  </Form.Row>
-                  <Form.Row>
-                      <Form.Group as={Col} md="6">
-                          <Form.Label>Xa</Form.Label>
-                          <Form.Control
-                              readOnly
-                              type="text"
-                              value={this.state.Xa}
-                          />
-                      </Form.Group>
-                      <Form.Group as={Col} md="6" >
-                          <Form.Label>Ya</Form.Label>
-                          <Form.Control
-                              readOnly
-                              type="text"
-                              value={this.state.Ya}
-                          />
-                      </Form.Group>
-                  </Form.Row>
-                  <Form.Row>
-                      <Form.Group as={Col} md="6" >
-                          <Form.Label>Xb</Form.Label>
-                          <Form.Control
-                              readOnly
-                              type="text"
-                              value={this.state.Xb}
-                          />
-                      </Form.Group>
-                      <Form.Group as={Col} md="6">
-                          <Form.Label>Yb</Form.Label>
-                          <Form.Control
-                              readOnly
-                              type="text"
-                              value={this.state.Yb}
-                          />
-                      </Form.Group>
-                  </Form.Row>
-                  <Form.Row>
-                      <Form.Group as={Col} md="6" >
-                          <Form.Label>Zab</Form.Label>
-                          <Form.Control
-                              readOnly
-                              type="text"
-                              value={this.state.Zab}
-                          />
-                      </Form.Group>
-                      <Form.Group as={Col} md="6">
-                          <Form.Label>Zba</Form.Label>
-                          <Form.Control
-                              readOnly
-                              type="text"
-                              value={this.state.Zba}
-
-                          />
-                      </Form.Group>
-                  </Form.Row>
-                  <Button type="submit" className="align-content-center" onSubmit={this.handleSubmit}>Расчитать</Button>
-              </Form>
-          </div>
-      </div>
+                      />
+                  </Form.Group>
+              </Form.Row>
+              <Button type="submit" className="align-content-center" onSubmit={this.handleSubmit}>Расчитать</Button>
+          </Form>
       );
     }
 }

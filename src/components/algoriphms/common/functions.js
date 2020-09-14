@@ -1,19 +1,22 @@
-const bigInt = require('big-integer');
 
 /*An Diffie-Hellman algorithm
 * Can get (P and Q) OR size of them in number of digits*/
 export function diffiHellman(p, g){
     // first
     let Xa =  randomIntFromInterval((p/2), (p-1));
+    console.log(Xa);
     let Ya = fastDegreeModule(g,Xa, p);
-
+    console.log(Ya);
     // second
     let Xb = randomIntFromInterval((p/2), (p-1));
+    console.log(Xb);
     let Yb = fastDegreeModule(g,Xb, p);
-
+    console.log(Yb);
     // Connection
     let Zab = fastDegreeModule(Yb,Xa, p);
+    console.log(Zab);
     let Zba = fastDegreeModule(Ya,Xb, p);
+    console.log(Zba);
 
 //     console.table({ p, g, Xa, Ya, Xb, Yb, Zab, Zba})
     return {p, g, Xa, Ya, Xb, Yb, Zab, Zba}
@@ -39,7 +42,7 @@ export function fastDegreeModule(a,x,p) {
             }
             result = (result * helpVar) % p;
         } else {
-            result = (result * degreeModule(a, BigInt(arrayOfDegrees[i - 1]), p)) % p;
+            result = (result * degreeModule(a, parseInt(arrayOfDegrees[i - 1]), p)) % p;
         }
     }
     return result;
@@ -57,7 +60,7 @@ function countFactorOf2Degree(num) {
     //if(num == 0) return "0";
     let tmp = 1;
     if (num === 0) {
-        return 0n;
+        return 0;
     } else if (num === 1) {
         return "1";
     }
@@ -66,6 +69,5 @@ function countFactorOf2Degree(num) {
     }
     tmp /= 2;
     num = num - tmp;
-    // console.log(tmp, num)
     return tmp.toString() + " " + countFactorOf2Degree(num);
 }

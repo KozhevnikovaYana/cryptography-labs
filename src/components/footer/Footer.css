@@ -1,9 +1,14 @@
-.contactInfo {
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-}
-
 h6 {
     text-align: center;
+    color: #990099;
+    font-family: 'Kalam', cursive;
+    font-size: 11pt;
+}
+
+.footer {
+    height: 5vh;
+    min-height: 5vh;
+    color: #990099;
+    font-family: 'Kalam', cursive;
+    font-size: 11pt;
 }
