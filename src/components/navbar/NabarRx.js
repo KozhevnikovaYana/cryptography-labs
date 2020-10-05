@@ -14,6 +14,9 @@ const NavbarRx = () => {
                     <NavLink to="/diffiHellman" className="nav-link ">
                         Диффи-Хеллман
                     </NavLink>
+                    <NavLink to="/shamir" className="nav-link ">
+                        Алгоритм Шамира
+                    </NavLink>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
