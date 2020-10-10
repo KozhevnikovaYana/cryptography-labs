@@ -1,44 +1,38 @@
 import React from 'react';
 import {Button, Col, Form} from "react-bootstrap";
-import {ShamirEncode} from "../common/functions";
+import {RSA} from "./RSAAlgorithm";
 
-export default class Shamir extends React.Component{
+export default class RSAForm extends React.Component{
 
     constructor(props) {
         super(props);
         this.state = {
-            x: '',
-            P: '',
+            message: '',
             Ca: '',
             Da: '',
+            Na: '',
             Cb: '',
             Db: '',
-            x1: '',
-            x2: '',
-            x3: '',
-            x4: ''
+            Nb: '',
+            m1: ''
         };
     }
     handleSubmit = event => {
         event.preventDefault();
-        const { x, p } = this.state;
-        this.runShamir(x, p);
+        const {message} = this.state;
+        this.runRsa(message);
     };
 
-    runShamir = (x, p) => {
-        const pNumber = parseInt(this.state.P);
-        console.log(pNumber);
-        let results = ShamirEncode(x, pNumber);
-        console.log(results);
+    runRsa = (message) => {
+        const [Na, Ca, Da, Nb, Cb, Db, m1] = RSA(message);
         this.setState({
-            Ca: results.Ca.toString(10),
-            Cb: results.Cb.toString(10),
-            Da: results.Da.toString(10),
-            Db: results.Db.toString(10),
-            x1: results.x1.toString(10),
-            x2: results.x2.toString(10),
-            x3: results.x3.toString(10),
-            x4: results.x4.toString(10)
+            Na: Na,
+            Ca: Ca,
+            Da: Da,
+            Nb: Nb,
+            Cb: Cb,
+            Db: Db,
+            m1: m1
         });
     };
     render() {
@@ -50,19 +44,8 @@ export default class Shamir extends React.Component{
                         <Form.Control
                             required
                             type="text"
-                            value={this.state.x}
-                            onChange={e => this.setState({x: e.target.value})}
-                        />
-                    </Form.Group>
-                </Form.Row>
-                <Form.Row>
-                    <Form.Group as={Col} md="6">
-                        <Form.Label>P</Form.Label>
-                        <Form.Control
-                            required
-                            type="text"
-                            value={this.state.P}
-                            onChange={e => this.setState({P: e.target.value})}
+                            value={this.state.message}
+                            onChange={e => this.setState({message: e.target.value})}
                         />
                     </Form.Group>
                 </Form.Row>
@@ -70,19 +53,17 @@ export default class Shamir extends React.Component{
                     <Form.Group as={Col} md="6">
                         <Form.Label>Ca</Form.Label>
                         <Form.Control
-                            required
+                            readOnly
                             type="text"
                             value={this.state.Ca}
-                            onChange={e => this.setState({Ca: e.target.value})}
                         />
                     </Form.Group>
                     <Form.Group as={Col} md="6">
                         <Form.Label>Da</Form.Label>
                         <Form.Control
-                            required
+                            readOnly
                             type="text"
                             value={this.state.Da}
-                            onChange={e => this.setState({Da: e.target.value})}
                         />
                     </Form.Group>
                 </Form.Row>
@@ -90,57 +71,46 @@ export default class Shamir extends React.Component{
                     <Form.Group as={Col} md="6">
                         <Form.Label>Cb</Form.Label>
                         <Form.Control
-                            required
+                            readOnly
                             type="text"
                             value={this.state.Cb}
-                            onChange={e => this.setState({Cb: e.target.value})}
                         />
                     </Form.Group>
                     <Form.Group as={Col} md="6">
                         <Form.Label>Db</Form.Label>
                         <Form.Control
-                            required
+                            readOnly
                             type="text"
                             value={this.state.Db}
-                            onChange={e => this.setState({Db: e.target.value})}
                         />
                     </Form.Group>
                 </Form.Row>
                 <Form.Row>
                     <Form.Group as={Col} md="6">
-                        <Form.Label>x1</Form.Label>
+                        <Form.Label>Na</Form.Label>
                         <Form.Control
                             readOnly
                             type="text"
-                            value={this.state.Zab}
+                            value={this.state.Na}
                         />
                     </Form.Group>
                     <Form.Group as={Col} md="6">
-                        <Form.Label>x2</Form.Label>
+                        <Form.Label>Nb</Form.Label>
                         <Form.Control
                             readOnly
                             type="text"
-                            value={this.state.Zba}
-
+                            value={this.state.Nb}
                         />
                     </Form.Group>
                 </Form.Row>
                 <Form.Row>
-                    <Form.Group as={Col} md="6">
-                        <Form.Label>x3</Form.Label>
+                    <Form.Group as={Col} md="12">
+                        <Form.Label>Полученное сообщение</Form.Label>
                         <Form.Control
                             readOnly
                             type="text"
-                            value={this.state.Zab}
-                        />
-                    </Form.Group>
-                    <Form.Group as={Col} md="6">
-                        <Form.Label>x4</Form.Label>
-                        <Form.Control
-                            readOnly
-                            type="text"
-                            value={this.state.Zba}
-
+                            value={this.state.m1}
+                            onChange={e => this.setState({m1: e.target.value})}
                         />
                     </Form.Group>
                 </Form.Row>

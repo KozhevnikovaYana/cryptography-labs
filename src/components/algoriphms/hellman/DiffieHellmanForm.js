@@ -1,9 +1,9 @@
 import React from 'react';
 
 import {Form, Col, Button} from 'react-bootstrap';
-import { DiffiHellman } from '../common/functions';
+import {diffiHellman} from "./DiffieHellmanAlgorithm";
 
-export default class DiffieHellman extends React.Component {
+export default class DiffieHellmanForm extends React.Component {
     state = {
         p: '',
         g: '',
@@ -23,7 +23,7 @@ export default class DiffieHellman extends React.Component {
     runDiffHellman = (p, g) => {
         const pNumber = parseInt(p);
         const gNumber = parseInt(g);
-        let results = DiffiHellman(pNumber, gNumber);
+        let results = diffiHellman(pNumber, gNumber);
         this.setState({
             p: results.p.toString(10),
             g: results.g.toString(10),
@@ -41,7 +41,7 @@ export default class DiffieHellman extends React.Component {
           <Form className={"col-6 pt-5 offset-3 shadow-lg p-3 2 bg-white rounded"} onSubmit={this.handleSubmit}>
               <Form.Row>
                   <Form.Group as={Col} md="6">
-                      <Form.Label>P</Form.Label>
+                      <Form.Label class>P</Form.Label>
                       <Form.Control
                           required
                           type="text"
