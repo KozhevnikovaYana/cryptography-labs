@@ -5,17 +5,20 @@ import Footer from "./components/footer/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from "./components/home/home";
-import DiffieHellmanForm from "./components/algoriphms/hellman/DiffieHellmanForm";
+import DiffieHellmanForm from "./components/algoriphms/Hellman/DiffieHellmanForm";
 import ShamirForm from "./components/algoriphms/Shamir/ShamirForm";
 import MentalPokerForm from "./components/algoriphms/MentalPoker/MentalPoker";
 import ElGamalForm from "./components/algoriphms/ElGamal/ElGamal";
 import RSAForm from "./components/algoriphms/RSA/RSAForm";
+import RSADigitalSignatureForm from "./components/algoriphms/DisgitalSignature/rsaDigitalSignature/RSADigitalSignatureForm";
+import ElGamalDigitalSignatureForm
+    from "./components/algoriphms/DisgitalSignature/elGamalDigitalSignature/ElGamalDigitalSignatureForm";
 
 
 class App extends Component {
     render() {
         return (
-            <div class={"common"}>
+            <div className={"common"}>
                 <Router>
                     <NavBar />
                     <Switch>
@@ -26,6 +29,8 @@ class App extends Component {
                             <Route exact path="/elGamal" component={ElGamalForm} />
                             <Route exact path="/mentalPoker" component={MentalPokerForm} />
                             <Route exact path="/rsa" component={RSAForm}/>
+                            <Route exact path="/digitalSignatureRsa" component={RSADigitalSignatureForm}/>
+                            <Route exact path="/digitalSignatureElGamal" component={ElGamalDigitalSignatureForm}/>
                         </div>
                     </Switch>
                     <Footer />

@@ -47,7 +47,7 @@ const NavbarRx = () => {
                             </NavLink>
                         </NavDropdown.Item>
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/digitalSignatureElGamal">
+                    <NavDropdown.Item>
                         <NavDropdown.Item>
                             <NavLink to="/digitalSignatureElGamal" className="nav-link">
                                 Эль-Гамаль

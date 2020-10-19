@@ -10,7 +10,7 @@ export function ElGamalEncrypt(message, P, D2, G) {
     let k;
 
     // Шифрование
-    k = BigInt(BigInt.randBetween(BigInt(1), (p-BigInt(1)).toString()));
+    k = BigInt(BigInt.randBetween(BigInt(1), p.minus(BigInt(1)).toString()));
     let r = fastDegreeModule(g, k, p);
     let cipher = (BigInt(message) * fastDegreeModule(d2, k, p)) % p; // Вычисляем е = m * (Db ^ k) mod p
 
