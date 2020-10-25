@@ -27,11 +27,11 @@ export function BabyStepGiantStepAlgorithm(Y, A, M, K, P){
     rowY.push(startY);
     console.log(rowY);
     console.log(rowA);
-    for(let i = 0; i < rowY.length; ++i){
-        for(let j = 0; j < rowA.length; ++j){
-            if(rowY[i].equals(rowA[j])){
+    for(let i = 0; i < rowA.length; ++i){
+        for(let j = 0; j < rowY.length; ++j){
+            if(rowY[j].equals(rowA[i])){
                 console.log(i, j);
-                return (i) * m - (j + 1);
+                return (i + 1) * m - (j);
             }
         }
     }
