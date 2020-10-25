@@ -39,6 +39,13 @@ const NavbarRx = () => {
                         </NavLink>
                     </NavDropdown.Item>
                 </NavDropdown>
+                <NavDropdown title="Взлом шифров" id="basic-nav-dropdown">
+                    <NavDropdown.Item>
+                        <NavLink to="/babyStepGiantStepAlgorithm" className="nav-link">
+                            Шаг младенца, шаг великана
+                        </NavLink>
+                    </NavDropdown.Item>
+                </NavDropdown>
                 <NavDropdown title="Электронная подпись" id="basic-nav-dropdown">
                     <NavDropdown.Item href="/digitalSignatureRsa">
                         <NavDropdown.Item>

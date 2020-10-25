@@ -13,6 +13,7 @@ import RSAForm from "./components/algoriphms/RSA/RSAForm";
 import RSADigitalSignatureForm from "./components/algoriphms/DisgitalSignature/rsaDigitalSignature/RSADigitalSignatureForm";
 import ElGamalDigitalSignatureForm
     from "./components/algoriphms/DisgitalSignature/elGamalDigitalSignature/ElGamalDigitalSignatureForm";
+import BabyStepGiantStepForm from "./components/algoriphms/BabyStepGiantStep/BabyStepGiantStepForm";
 
 
 class App extends Component {
@@ -31,6 +32,7 @@ class App extends Component {
                             <Route exact path="/rsa" component={RSAForm}/>
                             <Route exact path="/digitalSignatureRsa" component={RSADigitalSignatureForm}/>
                             <Route exact path="/digitalSignatureElGamal" component={ElGamalDigitalSignatureForm}/>
+                            <Route exact path="/babyStepGiantStepAlgorithm" component={BabyStepGiantStepForm}/>
                         </div>
                     </Switch>
                     <Footer />

@@ -38,3 +38,17 @@ _src/components/algoriphms/DisgitalSignature/rsaDigitalSignature/RSADigitalSIgna
 bsrc/components/algoriphms/DisgitalSignature/elGamalDigitalSignature/ElGamalDigitalSignatureForm.js,8\0\8081f4de862dc6de519919e79655a58601069ab3
 —
 gsrc/components/algoriphms/DisgitalSignature/elGamalDigitalSignature/ElGamalDigitalSignatureAlgorithm.js,3\8\3841148291d455ef1db6b7c62693b0ef175d32d4
+R
+"src/components/LanguageSelector.js,f\e\fec83f5346694ee73acae076cf1e8ed94d69f51b
+E
+src/languages/en.json,5\c\5c05274ed758b4959a1e31128a401426f85bbd76
+E
+src/languages/ru.json,c\b\cb689d16d32a924669a8271c55b8c5ee6abfd1a6
+F
+src/languages/index.js,1\c\1cbb61076d925574b465fdb694854b63eb919151
+\
+,src/components/algoriphms/ElGamal/ElGamal.js,5\a\5ac153ad90effc66893715cd180610a7e78a0142
+y
+Isrc/components/algoriphms/BabyStepGiantStep/BabyStepGiantStepAlgorithm.js,3\c\3c7c50109380a2cff3973e1132de6c99fbbfe448
+t
+Dsrc/components/algoriphms/BabyStepGiantStep/BabyStepGiantStepForm.js,3\3\3312a9f2874127cb27ca9d874032aabf7ea005c2
