@@ -52,3 +52,9 @@ y
 Isrc/components/algoriphms/BabyStepGiantStep/BabyStepGiantStepAlgorithm.js,3\c\3c7c50109380a2cff3973e1132de6c99fbbfe448
 t
 Dsrc/components/algoriphms/BabyStepGiantStep/BabyStepGiantStepForm.js,3\3\3312a9f2874127cb27ca9d874032aabf7ea005c2
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+j
+:src/components/algoriphms/DigitalMoney/DigitalMoneyForm.js,3\8\383915e6b8bf5a40f1fb7a1c9a72b94e13794d03
+o
+?src/components/algoriphms/DigitalMoney/DigitalMoneyAlgorithm.js,e\9\e991b74a34e70750df2963c211065dda8970b1af

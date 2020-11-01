@@ -38,6 +38,11 @@ const NavbarRx = () => {
                             Ментальный покер
                         </NavLink>
                     </NavDropdown.Item>
+                    <NavDropdown.Item>
+                        <NavLink to="/digitalMoney" className="nav-link">
+                            Электронные деньги
+                        </NavLink>
+                    </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="Взлом шифров" id="basic-nav-dropdown">
                     <NavDropdown.Item>

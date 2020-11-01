@@ -14,6 +14,8 @@ import RSADigitalSignatureForm from "./components/algoriphms/DisgitalSignature/r
 import ElGamalDigitalSignatureForm
     from "./components/algoriphms/DisgitalSignature/elGamalDigitalSignature/ElGamalDigitalSignatureForm";
 import BabyStepGiantStepForm from "./components/algoriphms/BabyStepGiantStep/BabyStepGiantStepForm";
+import {DigitalMoneyAlgorithm} from "./components/algoriphms/DigitalMoney/DigitalMoneyAlgorithm";
+import DigitalMoneyForm from "./components/algoriphms/DigitalMoney/DigitalMoneyForm";
 
 
 class App extends Component {
@@ -33,6 +35,7 @@ class App extends Component {
                             <Route exact path="/digitalSignatureRsa" component={RSADigitalSignatureForm}/>
                             <Route exact path="/digitalSignatureElGamal" component={ElGamalDigitalSignatureForm}/>
                             <Route exact path="/babyStepGiantStepAlgorithm" component={BabyStepGiantStepForm}/>
+                            <Route exact path="/digitalMoney" component={DigitalMoneyForm}/>
                         </div>
                     </Switch>
                     <Footer />
