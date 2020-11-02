@@ -18,5 +18,5 @@ export function DigitalMoneyAlgorithm(n, p, q, c){
     let n_c = BigInt(BigInt(fastDegreeModule(r, d, N)).multiply(n) % N);
     let s_c = BigInt(fastDegreeModule(n_c, c, N));
     let s = BigInt(s_c.multiply(r.modInv(N)) % N);
-    return [N, c, r, n_c, s_c, s];
+    return [N, d, r, n_c, s_c, s];
 }
