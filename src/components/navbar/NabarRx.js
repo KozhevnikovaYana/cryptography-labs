@@ -10,7 +10,7 @@ const NavbarRx = () => {
         <Navbar className="navbar navbar-expand-lg navbar-light bg-light">
             <NavLink to="/"><Navbar.Brand><span className="navbar-title">Криптография</span></Navbar.Brand></NavLink>
             <Nav>
-                <NavDropdown title="Криптосистемы с открытым ключём" id="basic-nav-dropdown">
+                <NavDropdown title="Криптосистемы с открытым ключом" id="basic-nav-dropdown">
                     <NavDropdown.Item>
                         <NavLink to="/diffiHellman" className="nav-link">
                             Алгоритм Диффи-Хеллмана
