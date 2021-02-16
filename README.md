@@ -1,5 +1,5 @@
 # cryptography-labs
-https://kozhevnikovayana.github.io/cryptography-labs/
+https://sanscri.github.io/cryptography-labs/#/
 
  Реализованные алгоритмы:
  1) Алгоритм Диффи-Хеллмана

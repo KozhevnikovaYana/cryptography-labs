@@ -4,7 +4,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "private": true,
   "main": "index.js",
-  "homepage": "https://sanscri.github.io/cryptography-labs/",
+  "homepage": "https://Sanscri.github.io/cryptography-labs",
   "dependencies": {
     "big-integer": "^1.6.48",
     "bootstrap": "^4.5.2",
